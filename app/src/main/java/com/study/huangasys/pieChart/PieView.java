@@ -53,8 +53,8 @@ public class PieView extends View {
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
 
         super.onSizeChanged(w, h, oldw, oldh);
-        mWidth = w;
-        mHight = h;
+        this.mWidth = w;
+        this.mHight = h;
 
     }
 
@@ -89,13 +89,14 @@ public class PieView extends View {
 
     /**
      * 初始化数据;
-     *这里的数据有 数值的数据即可;
+     * 这里的数据有 数值的数据即可;
+     *
      * @param mData
      */
     private void initData(ArrayList<PieData> mData) {
         if (null == mData || mData.size() == 0)
             return;
-        float sumValue=0;
+        float sumValue = 0;
         for (int i = 0; i < mData.size(); i++) {
             PieData pie = mData.get(i);
             sumValue += pie.getValue();//计算数值的和;

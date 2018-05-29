@@ -33,9 +33,9 @@ public class DrawsView extends View {
 
     private void initPaint() {
         mPaint = new Paint();
-        mPaint.setColor(Color.BLACK);
+        mPaint.setColor(Color.BLACK);//设置画笔的颜色;
         mPaint.setStyle(Paint.Style.FILL);//设置画笔的模式为填充;Stroke则为空心;
-        mPaint.setStrokeWidth(10f);
+        mPaint.setStrokeWidth(10f);//设置画笔的宽度为10px;
     }
 
     @Override
@@ -99,7 +99,7 @@ public class DrawsView extends View {
         canvas.drawRect(rectF,mPaint);
         //绘制弧度;
         mPaint.setColor(Color.BLUE);
-        canvas.drawArc(rectF,0,90,true,mPaint);
+        canvas.drawArc(rectF,0,90,true,mPaint);//绘制圆弧;
 
 
         super.onDraw(canvas);//目前不知道有啥作用;
