@@ -13,11 +13,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
-        PieView view = new PieView(this);
+    /*    PieView view = new PieView(this);
         setContentView(view);
-
         ArrayList<PieData> datas = new ArrayList<>();
         PieData pieData = new PieData("sloop", 60);
         PieData pieData2 = new PieData("sloop", 30);
@@ -29,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         datas.add(pieData3);
         datas.add(pieData4);
         datas.add(pieData5);
-        view.setData(datas);
+        view.setData(datas);*/
     }
 
 }
