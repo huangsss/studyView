@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.study.huangasys.studyview.MainActivity">
 
-<com.study.huangasys.textDemo.TextView
+<com.study.huangasys.codingView.MasterView
     android:layout_width="match_parent"
     android:layout_height="match_parent" />
 
